@@ -1,0 +1,439 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #021024;
+    color: white;
+  }
+  
+
+  /* Basic styling for the navigation */
+nav {
+  width: 100%;
+  background-color: #021024;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Logo styling */
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo a:hover {
+  color: #00e0ff;
+}
+
+/* Menu styling */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #00e0ff;
+  color: #fff;
+}
+
+/* Styling for the cancel button (for mobile) */
+.cancel-btn {
+  display: none;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu {
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: -100%;
+      width: 100%;
+      background-color: #333;
+      transition: left 0.3s ease;
+  }
+
+  .menu li {
+      margin: 15px 0;
+  }
+
+  .menu li a {
+      font-size: 1.5rem;
+      padding: 15px;
+      display: block;
+  }
+
+  /* Show the cancel button */
+  .cancel-btn {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      font-size: 1.8rem;
+      color: #fff;
+      cursor: pointer;
+  }
+
+  /* When the menu is open */
+  .menu.open {
+      left: 0;
+  }
+}
+
+  
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  .highlight {
+    color: #00e0ff;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    margin-bottom: 20px;
+  }
+  
+  .social-icon {
+    margin-right: 15px;
+    color: white;
+    font-size: 1.75rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #00e0ff;
+  }
+  
+  /* Button */
+  .btn-primary {
+    background-color: #00e0ff;
+    border-color: #00e0ff;
+    box-shadow: 0 5px 15px rgba(0, 224, 255, 0.5);
+  }
+  
+  .btn-primary:hover {
+    background-color: #00c4e0;
+    border-color: #00c4e0;
+    box-shadow: 0 5px 25px rgba(0, 224, 255, 0.7);
+  }
+  
+  /* Circle Image */
+  .image-container {
+    position: relative;
+  }
+  
+  .image-circle {
+    width: 400px;
+    height: 400px;
+    background-color: #00e0ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 30px rgba(0, 224, 255, 0.5); /* Circle shadow */
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .profile-img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    /* top: 50px; Adjusts the image's position within the circle */
+  }
+  
+  /* Media Query */
+  @media (max-width: 768px) {
+    .hero {
+      text-align: center;
+    }
+  
+    .image-circle {
+      margin-top: 20px;
+      width: 300px;
+      height: 300px;
+    }
+  
+    .profile-img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+
+
+
+
+  /* About Me Section Styles */
+.about-me {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 100px 0;
+  }
+  
+  .about-me h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .about-me h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-me p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .highlight {
+    color: #00e0ff;
+  }
+  
+  /* Circle Image */
+  .about-image-container {
+    position: relative;
+  }
+  
+  .about-image-circle {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border: 6px solid #00e0ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .profile-img-a {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Button */
+  .btn-primary {
+    background-color: #00e0ff;
+    border-color: #00e0ff;
+    box-shadow: 0 5px 15px rgba(0, 224, 255, 0.5);
+  }
+  
+  .btn-primary:hover {
+    background-color: #00c4e0;
+    border-color: #00c4e0;
+    box-shadow: 0 5px 25px rgba(0, 224, 255, 0.7);
+  }
+
+  .skills {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .highlight{
+    /* font-size: 2.5em;
+    font-weight: bold; */
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .skills-details {
+    margin-top: 30px;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .skill-name {
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+  
+  .skill-bar {
+    background-color: #e0e0e0; /* Light grey background for the bar */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Ensure the inner bar stays within */
+  }
+  
+  .skill-percentage {
+    height: 20px; /* Height of the progress bar */
+    background-color: #00c4e0; /* Blue color for the filled part */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    line-height: 20px; /* Center text vertically */
+    transition: width 0.4s ease; /* Smooth transition for width */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .about-me {
+      text-align: center;
+    }
+  
+    .about-image-circle {
+      margin-bottom: 30px;
+    }
+  }
+
+  
+  /* My Services Section */
+.my-services {
+    background-color: #1d1d1d;
+    color: white;
+  }
+  
+  .my-services h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .highlight {
+    color: #00e0ff;
+  }
+  
+  .service-card {
+    background-color: #2c2c2c;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    border-color: #00e0ff;
+  }
+  
+  .service-icon {
+    font-size: 3rem;
+    color: #00e0ff;
+    margin-bottom: 20px;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Button */
+  .btn-primary {
+    background-color: #00e0ff;
+    border-color: #00e0ff;
+    box-shadow: 0 5px 15px rgba(0, 224, 255, 0.5);
+  }
+  
+  .btn-primary:hover {
+    background-color: #00c4e0;
+    border-color: #00c4e0;
+    box-shadow: 0 5px 25px rgba(0, 224, 255, 0.7);
+  }
+
+  /* Footer Styling */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .text {
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+footer .text a {
+  color: #00e0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .text a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer .text span {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  footer .text {
+      font-size: 0.85rem;
+  }
+}
+
+  
+  
